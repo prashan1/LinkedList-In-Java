@@ -71,7 +71,6 @@ class LinkedList{
 		Node q = start ;
 		
 		while( q != null ){
-			
 			out.println ( q.data );
 			q = q.next;
 		}
@@ -115,26 +114,18 @@ class LinkedList{
 					break;	
 					
 				case 4 : out.println( "data" );
-				int data = e.nextInt();
-				
-				out.println("pos? ");
+					int data = e.nextInt();
+					out.println("pos? ");
 				
 				int pos = e.nextInt();
-				
 					list.addMiddle( pos, data ) ;
 					break;
 				case 5 :
 					print();
 					break;
-					
-				case 6 : 
-						out.println( Length( start ) );
-						break;
-						
-				case 7:
-					l--;
-					
-					
+				case 6 : out.println( Length( start ) );
+						break;	
+				case 7: l--;
 				default : out.println( "Wrong" );
 			}
 		}
